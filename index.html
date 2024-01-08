@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Markus Gavra</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+
+    <!--------------------------------------------- Header --------------------------------------------->
+      <header id="header">
+        <div class="logo">MG</div>
+        <input type="checkbox" id="nav_check" hidden />
+        <nav>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Reach Out</a></li>
+          </ul>
+        </nav>
+
+        <label for="nav_check" class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+      </header>
+
+      <div id="homepage">
+
+      <div class="hero-image">
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <!-- stats.js lib -->
+        <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+      </div>
+
+      <div class="text-overlay">
+        <h1>Markus</h1>
+        <br />
+        <h2>Gavra</h2>
+        <p>Software Engineer and <br>Student<span class="blink"> /</span></p>
+      </div>
+    </div>
+
+    <!----------------------------------------- About Me ----------------------------------------->
+
+    <div id="nextSection">
+      <div class="halfSquare">
+          <div class="aboutbackground">
+            <!-- particles.js container -->
+            <div id="particles-js-halfSquare"></div>
+            <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+            <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+            <!-- stats.js lib -->
+            <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+          </div>
+
+          <div class="card_Container">
+            <div class="card">
+                <div class="card__border">
+                    <img src="Icons/MG.jpg" alt="card image" class="card__img">
+                </div>
+
+                <h3 class="card__name">Markus Gavra</h3>
+                <span class="card__profession">"Engineer with a Creative Spark"</span>
+
+                <div class="card__social" id="card-social">
+                    <div class="card__social-control">
+                        <!-- Toggle button -->
+                        <div class="card__social-toggle" id="card-toggle">
+                          <ion-icon name="add-outline"></ion-icon>
+                        </div>
+    
+                        <span class="card__social-text">My Social Networks</span>
+    
+                        <!-- Card social -->
+                        <ul class="card__social-list">
+                            <a href="https://www.instagram.com/markus_gavra/" class="card__social-link">
+                              <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+    
+                            <a href="https://www.facebook.com/profile.php?id=100091293561878" class="card__social-link">
+                              <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+    
+                            <a href="https://www.linkedin.com/in/markus-gavra/" class="card__social-link">
+                              <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+
+                            <a href="https://github.com/GavraMG" class="card__social-link">
+                              <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+        <div class="about_Bannner">
+          <p class="about_Text">
+            About About About About About<br>
+            About About About About About<br>
+          </p>
+        </div>
+
+        <div class="about_Me">
+          <p>Hi, I'm Markus Gavra and I'm thrilled you've stumbled upon my page! I'm a proud Romanian and a 
+            diligent student at the University of Guelph, nestled in the vibrant community of Breslau, Ontario. 
+            My academic journey is carved through the realm of Software Engineering where I’m honing my skills to 
+            tackle and deconstruct the digital puzzles of tomorrow. When I’m not immersed in coding or 
+            contemplating the future of technology, you’ll find me at the gym where I channel my energy into 
+            fitness and strength training. Welcome to my world, where technology meets tenacity and every 
+            challenge is an opportunity for growth.
+          </p>
+        </div>
+
+        <div class="about_Icons">
+            <ul class="about_Social_List">
+              <a href="https://www.instagram.com/markus_gavra/" class="social_Icons">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+
+              <a href="https://www.facebook.com/profile.php?id=100091293561878" class="social_Icons">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+
+              <a href="https://www.linkedin.com/in/markus-gavra/" class="social_Icons">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+
+              <a href="https://github.com/GavraMG" class="social_Icons">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------ Skills ------------------------------------------->
+
+    <div class="banner1">
+      <div class="experience-container" id="experience">
+        <p class="background-text">
+          Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill<br>
+          Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill<br>
+          Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill Skill<br>
+        </p>
+        <h3 class="foreground-text">Skills</h3>
+      </div>
+    </div>
+
+    
+    <article class="container">
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">My skills</p>
+
+          <h2 class="h3 section-title">What My Programming Skills Included?</h2>
+
+          <p class="section-text">
+            As a university student, I proactively invest my own time in self-learning and exploring new programming lanaguages and technologies like
+          </p>
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+            <button class="toggle-btn" data-toggle-btn>Tools</button>
+          </div>
+
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+          <ul class="skills-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML5</div>
+
+                <div class="card-icon">
+                  <img src="Icons/HTML.svg" alt="HTML5 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CSS3</div>
+
+                <div class="card-icon">
+                  <img src="Icons/CSS.svg" alt="CSS3 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JavaScript</div>
+
+                <div class="card-icon">
+                  <img src="Icons/javascript.png" alt="JavaScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Java</div>
+
+                <div class="special-icon">
+                  <img src="Icons/Java.png" alt="Java logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Python</div>
+
+                <div class="special-icon">
+                  <img src="Icons/python.svg" alt="Python logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">C</div>
+
+                <div class="special-icon">
+                  <img src="Icons/C.svg" alt="C logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">React</div>
+
+                <div class="card-icon">
+                  <img src="Icons/React.svg" alt="React logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Firebase</div>
+
+                <div class="card-icon">
+                  <img src="Icons/firebase.png" alt="Firebase logo">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <ul class="tools-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Github</div>
+
+                <div class="special-icon">
+                  <img src="Icons/Github.svg" alt="Github logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Git</div>
+
+                <div class="special-icon">
+                  <img src="Icons/Git.svg" alt="Git logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Figma</div>
+
+                <div class="special-icon">
+                  <img src="Icons/Figma.svg" alt="Figma logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Windows</div>
+
+                <div class="windows-icon">
+                  <img src="Icons/Windows.svg" alt="Git logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Linux</div>
+
+                <div class="special-icon">
+                  <img src="Icons/Linux.svg" alt="Linux logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Npm</div>
+
+                <div class="card-icon">
+                  <img src="Icons/npm.png" alt="Npm logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Command Line</div>
+
+                <div class="card-icon">
+                  <img src="Icons/command.png" alt="Command Line logo">
+                </div>
+              </div>
+            </li>
+
+            
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Vs Code</div>
+
+                <div class="special-icon">
+                  <img src="Icons/VS Code.svg" alt="Vs code logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Spline 3D</div>
+
+                <div class="card-icon">
+                  <img src="Icons/Spline.png" alt="Spline 3D logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Node</div>
+
+                <div class="special-icon">
+                  <img src="Icons/nodejs-2.svg" alt="Node logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Photoshop</div>
+
+                <div class="card-icon">
+                  <img src="Icons/photoshop.png" alt="Photoshop logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Adobe XD</div>
+
+                <div class="card-icon">
+                  <img src="Icons/adobe.png" alt="Adobe XD logo">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!----------------------------------------- Projects ----------------------------------------->
+
+
+  </body>
+</html>
