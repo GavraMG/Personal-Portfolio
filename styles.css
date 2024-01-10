@@ -585,10 +585,11 @@ header nav ul li a.active {
 @media (max-width: 1400px) {
   .about_Text {
     font-size: 4vw;
-    left: 84%;
+    left: 1040px;
     transform: translateX(-50%);
     margin-top: -27%;
-    padding-left: 170px;
+    padding-left: 0px;
+    max-width: 570px;
   }
 }
 
@@ -753,7 +754,7 @@ header nav ul li a.active {
 :root {
 
   .container {
-    padding-inline: 10px;
+    padding-inline: 20px;
   }
 
   .container h2,
