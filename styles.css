@@ -601,7 +601,7 @@ header nav ul li a.active {
     margin-top: -90%;
     padding-top: 300px;
     max-width: 400px;
-    left: 220px; /* Add this line */
+    left: 240px; /* Add this line */
   }
 }
 
