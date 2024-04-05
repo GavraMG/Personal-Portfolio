@@ -503,186 +503,186 @@ header nav ul li a.active {
 }
 
 @media (max-width: 1400px) {
-    .CircleDesign1 {
-      position: absolute;
-      overflow: hidden;
-      width: 100%;
-      height: 100vh;
-      top: 710px;
-      z-index: 1;
-    }
-  
-    .Ellipse1 {
-      width: 134px;
-      height: 134px;
-      left: -60px;
-      top: 157px;
-      position: absolute;
-      background: #ff5f1f;
-      box-shadow: 0px 4px 30px 6px rgba(0, 0, 0, 0.25);
-      border-radius: 9999px;
-    }
-  
-    .Ellipse2 {
-      width: 158px;
-      height: 158px;
-      left: 0px;
-      top: 100px;
-      position: absolute;
-      background: #2c2b2b;
-      box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-      border-radius: 9999px;
-    }
-  
-    .Ellipse3 {
-      width: 250px;
-      height: 250px;
-      left: 119px;
-      top: 80px;
-      position: absolute;
-      background: #ff5f1f;
-      box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-      border-radius: 9999px;
-    }
-  
-    .Ellipse4 {
-      width: 122px;
-      height: 122px;
-      left: 90px;
-      top: 65px;
-      z-index: -1;
-      position: absolute;
-      background: white;
-      box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
-      border-radius: 9999px;
-    }
-  
-    .Ellipse5 {
-      width: 160px;
-      height: 160px;
-      left: 300px;
-      top: 25px;
-      width: 1;
-      position: relative;
-      background: #2c2b2b;
-      box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-      border-radius: 9999px;
-    }
-  
-    .Ellipse6 {
-        width: 374px;
-        height: 374px;
-        left: 300px;
-        top: 20px;
-        z-index: -1;
-        position: absolute;
-        background: #2c2b2b;
-        box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-        border-radius: 9999px;
-      }
-      
-      .Ellipse7 {
-        width: 170px;
-        height: 170px;
-        left: 600px;
-        top: 50px;
-        position: absolute;
-        background: white;
-        box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-        border-radius: 9999px;
-      }
-      
-      .Ellipse8 {
-        width: 223px;
-        height: 223px;
-        left: 620px;
-        top: 157px;
-        position: absolute;
-        background: #ff5f1f;
-        box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-        border-radius: 9999px;
-      }
-      
-      .Ellipse9 {
-        width: 183px;
-        height: 183px;
-        left: 740px;
-        top: 70px;
-        position: absolute;
-        background: #2c2b2b;
-        box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-        border-radius: 9999px;
-      }
-      
-      .Ellipse10 {
-        width: 220px;
-        height: 220px;
-        left: 890px;
-        top: 30px;
-        position: absolute;
-        background: #ff5f1f;
-        box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-        border-radius: 9999px;
-      }
-      
-      .Ellipse11 {
-        width: 274px;
-        height: 274px;
-        left: 800px;
-        top: 100px;
-        z-index: -1;
-        position: absolute;
-        background: #2c2b2b;
-        box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-        border-radius: 9999px;
-      }
-      
-      .Ellipse12 {
-        width: 160px;
-        height: 160px;
-        left: 1000px;
-        top: 190px;
-        position: absolute;
-        background: white;
-        box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-        border-radius: 9999px;
-      }
-      
-      .Ellipse13 {
-        width: 321px;
-        height: 321px;
-        left: 1100px;
-        top: -100px;
-        z-index: -1;
-        position: relative;
-        background: #ff5f1f;
-        box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-        border-radius: 9999px;
-      }
-  
-      .Ellipse14 {
-        width: 231px;
-        height: 240px;
-        left: 1030px;
-        top: 20px;
-        z-index: -1;
-        position: absolute;
-        background: #2c2b2b;
-        box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-        border-radius: 9999px;
-      }
-    .Ellipse15 {
-      display: none;
-    }
-  
-    .Ellipse16 {
-      display: none;
-    }
-  
-    .Ellipse17 {
-      display: none;
-    }
+  .CircleDesign1 {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    top: 710px;
+    z-index: 1;
   }
+
+  .Ellipse1 {
+    width: 134px;
+    height: 134px;
+    left: -60px;
+    top: 157px;
+    position: absolute;
+    background: #ff5f1f;
+    box-shadow: 0px 4px 30px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+  }
+
+  .Ellipse2 {
+    width: 158px;
+    height: 158px;
+    left: 0px;
+    top: 100px;
+    position: absolute;
+    background: #2c2b2b;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+  }
+
+  .Ellipse3 {
+    width: 250px;
+    height: 250px;
+    left: 119px;
+    top: 80px;
+    position: absolute;
+    background: #ff5f1f;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+  }
+
+  .Ellipse4 {
+    width: 122px;
+    height: 122px;
+    left: 90px;
+    top: 65px;
+    z-index: -1;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+  }
+
+  .Ellipse5 {
+    width: 160px;
+    height: 160px;
+    left: 300px;
+    top: 25px;
+    width: 1;
+    position: relative;
+    background: #2c2b2b;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+  }
+
+  .Ellipse6 {
+    width: 374px;
+    height: 374px;
+    left: 300px;
+    top: 20px;
+    z-index: -1;
+    position: absolute;
+    background: #2c2b2b;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+  }
+
+  .Ellipse7 {
+    width: 170px;
+    height: 170px;
+    left: 600px;
+    top: 50px;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+  }
+
+  .Ellipse8 {
+    width: 223px;
+    height: 223px;
+    left: 620px;
+    top: 157px;
+    position: absolute;
+    background: #ff5f1f;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+  }
+
+  .Ellipse9 {
+    width: 183px;
+    height: 183px;
+    left: 740px;
+    top: 70px;
+    position: absolute;
+    background: #2c2b2b;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+  }
+
+  .Ellipse10 {
+    width: 220px;
+    height: 220px;
+    left: 890px;
+    top: 30px;
+    position: absolute;
+    background: #ff5f1f;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+  }
+
+  .Ellipse11 {
+    width: 274px;
+    height: 274px;
+    left: 800px;
+    top: 100px;
+    z-index: -1;
+    position: absolute;
+    background: #2c2b2b;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+  }
+
+  .Ellipse12 {
+    width: 160px;
+    height: 160px;
+    left: 1000px;
+    top: 190px;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+  }
+
+  .Ellipse13 {
+    width: 321px;
+    height: 321px;
+    left: 1100px;
+    top: -100px;
+    z-index: -1;
+    position: relative;
+    background: #ff5f1f;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+  }
+
+  .Ellipse14 {
+    width: 231px;
+    height: 240px;
+    left: 1030px;
+    top: 20px;
+    z-index: -1;
+    position: absolute;
+    background: #2c2b2b;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+  }
+  .Ellipse15 {
+    display: none;
+  }
+
+  .Ellipse16 {
+    display: none;
+  }
+
+  .Ellipse17 {
+    display: none;
+  }
+}
 
 @media (max-width: 500px) {
   .CircleDesign1 {
@@ -1014,6 +1014,12 @@ header nav ul li a.active {
 }
 
 @media (max-width: 1400px) {
+  .About_Me {
+    padding-top: 1200px;
+    padding-bottom: 80px;
+    position: relative;
+  }
+
   .About_content {
     position: relative;
     padding-bottom: 100px;
@@ -1065,7 +1071,7 @@ header nav ul li a.active {
 
 @media (max-width: 1100px) {
   .About_Me {
-    padding-top: 1200px;
+    padding-top: 1150px;
     padding-bottom: 80px;
     position: relative;
   }
@@ -1130,7 +1136,6 @@ header nav ul li a.active {
     height: 0px;
     display: none;
   }
-  
 
   .header {
     padding: 0px;
@@ -1165,5 +1170,275 @@ header nav ul li a.active {
   .tools-list {
     font-size: 12px;
     padding-bottom: 120px;
+  }
+}
+
+/* --------------------- Education / Experience Section ----------------------*/
+
+.container {
+  width: 2000px;
+  padding-left: 100px;
+  padding-bottom: 300px;
+}
+
+.container {
+  padding-right: calc(10% - 30px);
+}
+
+main.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 70px;
+}
+
+.col header.title {
+  position: relative;
+}
+
+.col header.title h2 {
+  -webkit-text-stroke: 2px #1c1c1c;
+  font-size: 60px;
+  color: transparent;
+  padding: 0px 0px 20px 20px;
+}
+
+.col .contents {
+  padding: 0px 30px;
+  border-left: 3px solid #1c1c1c;
+}
+.col .contents .box {
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  border: 4px solid #1c1c1c;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 30px;
+}
+.col .contents .box:hover {
+  box-shadow: 0px 3px 12px 0px #ff5f1f;
+}
+.col .contents .box::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 27px);
+  top: -8px;
+  background-color: #1c1c1c;
+}
+.box h4 {
+  position: relative;
+  font-size: 20px;
+  color: #ff5f1f;
+}
+.box h3 {
+  position: relative;
+  padding-top: 10px;
+  font-size: 20px;
+  color: #1c1c1c;
+}
+.box p {
+  padding-top: 15px;
+  line-height: 25px;
+  color: #1c1c1c;
+  font-size: 18px;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 1400px;
+    padding-left: 100px;
+  }
+
+  .container {
+    padding-right: calc(10% - 30px);
+  }
+
+  .col header.title h2 {
+    -webkit-text-stroke: 2px #1c1c1c;
+    font-size: 50px;
+    color: transparent;
+    padding: 0px 0px 20px 20px;
+  }
+
+  .col .contents {
+    padding: 0px 30px;
+    border-left: 3px solid #1c1c1c;
+  }
+  .col .contents .box {
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    border: 4px solid #1c1c1c;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 30px;
+  }
+  .col .contents .box:hover {
+    box-shadow: 0px 3px 12px 0px #ff5f1f;
+  }
+  .col .contents .box::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 27px);
+    top: -8px;
+    background-color: #1c1c1c;
+  }
+
+  .box h4 {
+    position: relative;
+    font-size: 18px;
+    color: #ff5f1f;
+  }
+  .box h3 {
+    position: relative;
+    padding-top: 10px;
+    font-size: 16px;
+    color: #1c1c1c;
+  }
+  .box p {
+    padding-top: 15px;
+    line-height: 25px;
+    color: #1c1c1c;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    width: 1100px;
+    padding-left: 20px;
+  }
+
+  .container {
+    padding-right: calc(10% - 30px);
+  }
+
+  .col header.title h2 {
+    -webkit-text-stroke: 2px #1c1c1c;
+    font-size: 50px;
+    color: transparent;
+    padding: 0px 0px 20px 20px;
+  }
+
+  .col .contents {
+    padding: 0px 30px;
+    border-left: 3px solid #1c1c1c;
+  }
+  .col .contents .box {
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    border: 4px solid #1c1c1c;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 30px;
+  }
+  .col .contents .box:hover {
+    box-shadow: 0px 3px 12px 0px #ff5f1f;
+  }
+  .col .contents .box::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 27px);
+    top: -8px;
+    background-color: #1c1c1c;
+  }
+
+  .box h4 {
+    position: relative;
+    font-size: 18px;
+    color: #ff5f1f;
+  }
+  .box h3 {
+    position: relative;
+    padding-top: 10px;
+    font-size: 16px;
+    color: #1c1c1c;
+  }
+  .box p {
+    padding-top: 15px;
+    line-height: 25px;
+    color: #1c1c1c;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 400px;
+    padding-left: 20px;
+  }
+
+  .container {
+    padding-right: calc(10% - 30px);
+  }
+
+  main.row {
+    grid-template-columns: 1fr;
+  }
+
+  .row .col:nth-child(2) {
+    margin-top: 30px;
+  }
+
+  .col header.title h2 {
+    -webkit-text-stroke: 2px #1c1c1c;
+    font-size: 40px;
+    color: transparent;
+    padding: 0px 0px 20px 20px;
+  }
+
+  .col .contents {
+    padding: 0px 30px;
+    border-left: 3px solid #1c1c1c;
+  }
+  .col .contents .box {
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    border: 4px solid #1c1c1c;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 30px;
+  }
+  .col .contents .box:hover {
+    box-shadow: 0px 3px 12px 0px #ff5f1f;
+  }
+  .col .contents .box::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 27px);
+    top: -8px;
+    background-color: #1c1c1c;
+  }
+
+  .box h4 {
+    position: relative;
+    font-size: 18px;
+    color: #ff5f1f;
+  }
+  .box h3 {
+    position: relative;
+    padding-top: 10px;
+    font-size: 16px;
+    color: #1c1c1c;
+  }
+  .box p {
+    padding-top: 15px;
+    line-height: 25px;
+    color: #1c1c1c;
+    font-size: 16px;
   }
 }
