@@ -15,7 +15,7 @@
 /*--------------------------------------------- Page #1 - Homepage / About Me / Education / Experiences ---------------------------------------------*/
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   background-color: #ffffff;
   background-size: cover;
   background-repeat: no-repeat;
