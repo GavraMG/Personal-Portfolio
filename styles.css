@@ -1651,7 +1651,8 @@ main.row {
     position: absolute;
     overflow: hidden;
     width: 100%;
-    top: 2820px;
+    top: 2814px;
+    padding-bottom: 0;
     z-index: 1;
   }
 
@@ -1963,6 +1964,7 @@ main.row {
 
 footer {
   background-color: #1c1c1c;
+  height: auto;
 }
 
 .footerContainer {
@@ -2027,6 +2029,7 @@ footer {
   letter-spacing: 1px;
   font-weight: 500;
   margin: 0px 5px;
+  margin-bottom: 0px;
 }
 
 .footerBottom a:hover {
@@ -2056,7 +2059,6 @@ footer {
 @media (max-width: 500px) {
   footer {
     background-color: #1c1c1c;
-    margin-top: -30px;
   }
   .socialIcons {
     display: flex;
@@ -2106,5 +2108,6 @@ footer {
     letter-spacing: 1px;
     font-weight: 400;
     margin: 0px 5px;
+    margin-bottom: 0px;
   }
 }
