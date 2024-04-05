@@ -1,49 +1,48 @@
 * {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  font-family: "MonumentExtended";
-}
-
-@font-face {
-  font-family: "MonumentExtended";
-  src: url(fonts/MONUMENTEXTENDED-REGULAR.OTF);
-}
-
-/*--------------------------------------------- Page #1 - Homepage / About Me / Education / Experiences ---------------------------------------------*/
-
-body {
-  height: 100vh;
-  background-color: #ffffff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow-x: hidden;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-/* --------------------- Header ----------------------*/
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "MonumentExtended";
+  }
+  
+  @font-face {
+    font-family: "MonumentExtended";
+    src: url(fonts/MONUMENTEXTENDED-REGULAR.OTF);
+  }
+  
+  /*--------------------------------------------- Page #1 - Homepage / About Me / Education / Experiences ---------------------------------------------*/
+  
+  body {
+    height: 100vh;
+    background-color: #ffffff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* --------------------- Header ----------------------*/
 
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 30px;
-  transition: 0.8s;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 70px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    transition: 0.8s;
 }
 
 header.sticky {
-  padding: 0 30px;
-  position: fixed;
-  background-color: transparent;
+    padding: 0 30px;
+    background-color: transparent;
 }
 
 header.sticky .logo,
@@ -64,750 +63,569 @@ header.sticky .hamburger div {
 }
 
 header .logo {
-  font-size: 30px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 header nav ul {
-  display: flex;
+    display: flex;
 }
 
 header nav ul li a {
-  display: inline-block;
-  color: #ffffff;
-  font-weight: 500;
-  padding: 5px 0;
-  margin: 0 30px;
-  border: 3px solid transparent;
-  text-transform: uppercase;
-  transition: 0.3s;
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0 30px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.3s;
 }
 
 header nav ul li a:hover,
 header nav ul li a.active {
-  border-bottom-color: #ff5f1f;
+    border-bottom-color: #ff5f1f;
 }
 
 .hamburger {
-  cursor: pointer;
-  display: none;
+    cursor: pointer;
+    display: none;
 }
 
 .hamburger div {
-  width: 30px;
-  height: 3px;
-  margin: 5px 0;
-  background: #ffffff;
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #FFFFFF;
 }
 
-.background {
-  background-color: #1c1c1c;
-  background-size: cover;
-  height: 950px;
-  background-position: center;
-  background-repeat: no-repeat;
+.background  {
+    background-color: #1c1c1c; 
+    background-size: cover;
+    height: 950px; 
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 4500px) {
-  .nav_logo {
-    display: none;
+    .nav_logo {
+      display: none;
+    }
   }
-}
-
-@media (max-width: 1500px) {
-  .hamburger {
-    display: block;
-    z-index: 3;
+  
+  @media (max-width: 1500px) {
+    .hamburger {
+      display: block;
+      z-index: 3;
+    }
+  
+    header nav {
+      position: fixed;
+      width: 100%;
+      left: -100%;
+      top: 0;
+      background-color: #ffffff;
+      width: 30%;
+      height: 100000px;
+      padding-left: 30px;
+      padding-top: 80px;
+      transition: 0.4s;
+      z-index: 3;
+    }
+  
+    header #nav_check:checked ~ nav {
+      left: 0;
+    }
+  
+    header nav ul {
+      display: block;
+    }
+  
+    header nav ul li a {
+      margin: 5px 0;
+      font-size: 16px;
+      color: #1c1c1c;
+      font-weight: 400;
+    }
+  
+    .nav_logo {
+      font-size: 25px;
+      position: absolute;
+      margin-top: -65px;
+      display: flex;
+      font-weight: 500;
+    }
   }
-
-  header nav {
-    position: fixed;
-    width: 100%;
-    left: -100%;
-    top: 0;
-    background-color: #ffffff;
-    width: 30%;
-    height: 100000px;
-    padding-left: 30px;
-    padding-top: 80px;
-    transition: 0.4s;
-    z-index: 3;
+  
+  @media (max-width: 500px) {
+    .hamburger {
+      display: block;
+      z-index: 3;
+    }
+  
+    header nav {
+      position: fixed;
+      width: 100%;
+      left: -100%;
+      top: 0;
+      background-color: #ffffff;
+      width: 220px;
+      height: 100000px;
+      padding-left: 30px;
+      padding-top: 80px;
+      transition: 0.4s;
+      z-index: 3;
+    }
+  
+    header #nav_check:checked ~ nav {
+      left: 0;
+    }
+  
+    header nav ul {
+      display: block;
+    }
+  
+    header nav ul li a {
+      margin: 5px 0;
+      font-size: 18px;
+      color: #1c1c1c;
+      font-weight: 500;
+    }
+  
+    .nav_logo {
+      font-size: 30px;
+      position: absolute;
+      margin-top: -60px;
+      display: flex;
+      font-weight: 500;
+    }
   }
-
-  header #nav_check:checked ~ nav {
-    left: 0;
-  }
-
-  header nav ul {
-    display: block;
-  }
-
-  header nav ul li a {
-    margin: 5px 0;
-    font-size: 16px;
-    color: #1c1c1c;
-    font-weight: 400;
-  }
-
-  .nav_logo {
-    font-size: 25px;
-    position: absolute;
-    margin-top: -65px;
-    display: flex;
-    font-weight: 500;
-  }
-}
-
-@media (max-width: 500px) {
-  .hamburger {
-    display: block;
-    z-index: 3;
-  }
-
-  header nav {
-    position: fixed;
-    width: 100%;
-    left: -100%;
-    top: 0;
-    background-color: #ffffff;
-    width: 220px;
-    height: 100000px;
-    padding-left: 30px;
-    padding-top: 80px;
-    transition: 0.4s;
-    z-index: 3;
-  }
-
-  header #nav_check:checked ~ nav {
-    left: 0;
-  }
-
-  header nav ul {
-    display: block;
-  }
-
-  header nav ul li a {
-    margin: 5px 0;
-    font-size: 18px;
-    color: #1c1c1c;
-    font-weight: 500;
-  }
-
-  .nav_logo {
-    font-size: 30px;
-    position: absolute;
-    margin-top: -60px;
-    display: flex;
-    font-weight: 500;
-  }
-}
 
 .HomepageText {
-  font-family: "MonumentExtended";
-  position: absolute;
-  top: 200px;
-  left: 20px;
-  padding: 60px;
-  z-index: 1;
-}
-
-.HomepageText .Markus {
-  color: transparent;
-  font-size: 120px;
-  text-transform: uppercase;
-  -webkit-text-stroke: 4px #ffffff;
-}
-
-.HomepageText .Gavra {
-  color: transparent;
-  font-size: 120px;
-  text-transform: uppercase;
-  margin-top: -40px;
-  -webkit-text-stroke: 4px #ff5f1f;
-  padding-bottom: 15px;
-}
-
-.HomepageText .SoftwareEngineerWebDesignStudent {
-  font-size: 30px;
-  color: #ffffff;
-  font-weight: 500;
-  padding-left: 11px;
-}
-
-@media (max-width: 1400px) {
-  .HomepageText {
+    font-family: "MonumentExtended";
     position: absolute;
     top: 200px;
-    left: 10px;
-    padding-left: 2px;
+    left: 20px;
+    padding: 60px;
     z-index: 1;
   }
-
+  
   .HomepageText .Markus {
-    font-weight: 400;
-    font-size: 100px;
-    padding-left: 21px;
+    color: transparent;
+    font-size: 120px;
     text-transform: uppercase;
     -webkit-text-stroke: 4px #ffffff;
   }
-
+  
   .HomepageText .Gavra {
-    font-weight: 400;
-    font-size: 100px;
-    padding-left: 21px;
-    padding-top: 10px;
+    color: transparent;
+    font-size: 120px;
     text-transform: uppercase;
+    margin-top: -40px;
     -webkit-text-stroke: 4px #ff5f1f;
+    padding-bottom: 15px;
   }
-
+  
   .HomepageText .SoftwareEngineerWebDesignStudent {
     font-size: 30px;
     color: #ffffff;
     font-weight: 500;
-    padding-left: 21px;
+    padding-left: 11px;
   }
-}
-
-@media (max-width: 500px) {
-  .HomepageText {
-    position: absolute;
-    top: 250px;
-    left: 10px;
-    padding-left: 2px;
-    z-index: 1;
+  
+  @media (max-width: 1400px) {
+    .HomepageText {
+      position: absolute;
+      top: 200px;
+      left: 10px;
+      padding-left: 2px;
+      z-index: 1;
+    }
+  
+    .HomepageText .Markus {
+      font-weight: 400;
+      font-size: 100px;
+      padding-left: 21px;
+      text-transform: uppercase;
+      -webkit-text-stroke: 4px #ffffff;
+    }
+  
+    .HomepageText .Gavra {
+      font-weight: 400;
+      font-size: 100px;
+      padding-left: 21px;
+      padding-top: 10px;
+      text-transform: uppercase;
+      -webkit-text-stroke: 4px #ff5f1f;
+    }
+  
+    .HomepageText .SoftwareEngineerWebDesignStudent {
+      font-size: 30px;
+      color: #ffffff;
+      font-weight: 500;
+      padding-left: 21px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .HomepageText {
+      position: absolute;
+      top: 250px;
+      left: 10px;
+      padding-left: 2px;
+      z-index: 1;
+    }
+  
+    .HomepageText .Markus {
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 50px;
+      padding-left: 21px;
+      text-transform: uppercase;
+      -webkit-text-stroke: #ffffff;
+    }
+  
+    .HomepageText .Gavra {
+      color: #ff5f1f;
+      font-weight: 400;
+      font-size: 50px;
+      padding-left: 21px;
+      padding-top: 40px;
+      text-transform: uppercase;
+      -webkit-text-stroke: #ff5f1f;
+    }
+  
+    .HomepageText .SoftwareEngineerWebDesignStudent {
+      font-size: 18px;
+      color: #ffffff;
+      font-weight: 400;
+      padding-left: 21px;
+      line-height: 30px;
+      padding-top: 0px;
+    }
   }
 
-  .HomepageText .Markus {
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 50px;
-    padding-left: 21px;
-    text-transform: uppercase;
-    -webkit-text-stroke: #ffffff;
-  }
-
-  .HomepageText .Gavra {
-    color: #ff5f1f;
-    font-weight: 400;
-    font-size: 50px;
-    padding-left: 21px;
-    padding-top: 40px;
-    text-transform: uppercase;
-    -webkit-text-stroke: #ff5f1f;
-  }
-
-  .HomepageText .SoftwareEngineerWebDesignStudent {
-    font-size: 18px;
-    color: #ffffff;
-    font-weight: 400;
-    padding-left: 21px;
-    line-height: 30px;
-    padding-top: 0px;
-  }
-}
-
-/* --------------------- Circle Design For Homepage ----------------------*/
+  /* --------------------- Circle Design For Homepage ----------------------*/
 
 .CircleDesign1 {
-  position: relative;
-  width: 100%;
-  top: 700px;
-}
-
-.Ellipse1 {
-  width: 134px;
-  height: 134px;
-  left: -50px;
-  top: 147px;
-  position: absolute;
-  background: #ff5f1f;
-  box-shadow: 0px 4px 30px 6px rgba(0, 0, 0, 0.25);
-  border-radius: 9999px;
-}
-
-.Ellipse2 {
-  width: 158px;
-  height: 158px;
-  left: 25px;
-  top: 100px;
-  position: absolute;
-  background: #2c2b2b;
-  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 9999px;
-}
-
-.Ellipse3 {
-  width: 289px;
-  height: 289px;
-  left: 139px;
-  top: 55px;
-  position: absolute;
-  background: #ff5f1f;
-  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 9999px;
-}
-
-.Ellipse4 {
-  width: 162px;
-  height: 162px;
-  left: 367px;
-  top: 55px;
-  position: absolute;
-  background: white;
-  box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 9999px;
-}
-
-.Ellipse5 {
-  width: 160px;
-  height: 160px;
-  left: 400px;
-  top: 136px;
-  position: absolute;
-  background: #ff5f1f;
-  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 9999px;
-}
-
-.Ellipse6 {
-  width: 374px;
-  height: 374px;
-  left: 500px;
-  top: 20px;
-  position: absolute;
-  background: #2c2b2b;
-  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 9999px;
-}
-
-.Ellipse7 {
-  width: 170px;
-  height: 170px;
-  left: 840px;
-  top: 50px;
-  position: absolute;
-  background: white;
-  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 9999px;
-}
-
-.Ellipse8 {
-  width: 223px;
-  height: 223px;
-  left: 790px;
-  top: 157px;
-  position: absolute;
-  background: #ff5f1f;
-  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 9999px;
-}
-
-.Ellipse9 {
-  width: 183px;
-  height: 183px;
-  left: 960px;
-  top: 150px;
-  position: absolute;
-  background: #2c2b2b;
-  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 9999px;
-}
-
-.Ellipse10 {
-  width: 220px;
-  height: 220px;
-  left: 990px;
-  top: 30px;
-  position: absolute;
-  background: #ff5f1f;
-  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 9999px;
-}
-
-.Ellipse11 {
-  width: 274px;
-  height: 274px;
-  left: 1100px;
-  top: 70px;
-  position: absolute;
-  background: #2c2b2b;
-  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 9999px;
-}
-
-.Ellipse12 {
-  width: 160px;
-  height: 160px;
-  left: 1215px;
-  top: 225px;
-  position: absolute;
-  background: white;
-  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 9999px;
-}
-
-.Ellipse13 {
-  width: 321px;
-  height: 321px;
-  left: 1320px;
-  top: 53px;
-  position: absolute;
-  background: #ff5f1f;
-  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 9999px;
-}
-
-.Ellipse14 {
-  width: 231px;
-  height: 240px;
-  left: 1550px;
-  top: 110px;
-  position: absolute;
-  background: #2c2b2b;
-  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 9999px;
-}
-
-.Ellipse15 {
-  width: 140px;
-  height: 140px;
-  left: 1563px;
-  top: 60px;
-  position: absolute;
-  background: white;
-  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 9999px;
-}
-
-.Ellipse16 {
-  width: 250px;
-  height: 250px;
-  left: 1680px;
-  top: 30px;
-  position: absolute;
-  background: #ff5f1f;
-  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 9999px;
-}
-
-.Ellipse17 {
-  width: 206px;
-  height: 206px;
-  left: 1750px;
-  top: 188px;
-  position: absolute;
-  background: #2c2b2b;
-  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 9999px;
-}
-
-@media (max-width: 1400px) {
-  .CircleDesign1 {
     position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-    top: 710px;
-    z-index: 1;
+    top: 780px;
+    z-index: 2;
   }
-
+  
   .Ellipse1 {
     width: 134px;
     height: 134px;
-    left: -60px;
-    top: 157px;
+    left: -50px;
+    top: 147px;
     position: absolute;
     background: #ff5f1f;
     box-shadow: 0px 4px 30px 6px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-
+  
   .Ellipse2 {
     width: 158px;
     height: 158px;
-    left: 0px;
+    left: 25px;
     top: 100px;
     position: absolute;
     background: #2c2b2b;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-
+  
   .Ellipse3 {
-    width: 250px;
-    height: 250px;
-    left: 119px;
-    top: 80px;
+    width: 289px;
+    height: 289px;
+    left: 139px;
+    top: 55px;
     position: absolute;
     background: #ff5f1f;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-
+  
   .Ellipse4 {
-    width: 122px;
-    height: 122px;
-    left: 90px;
-    top: 65px;
-    z-index: -1;
+    width: 162px;
+    height: 162px;
+    left: 367px;
+    top: 55px;
     position: absolute;
     background: white;
     box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-
+  
   .Ellipse5 {
     width: 160px;
     height: 160px;
-    left: 300px;
-    top: 25px;
-    width: 1;
-    position: relative;
-    background: #2c2b2b;
+    left: 400px;
+    top: 136px;
+    position: absolute;
+    background: #ff5f1f;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-
+  
   .Ellipse6 {
     width: 374px;
     height: 374px;
-    left: 300px;
+    left: 500px;
     top: 20px;
-    z-index: -1;
     position: absolute;
     background: #2c2b2b;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-
+  
   .Ellipse7 {
     width: 170px;
     height: 170px;
-    left: 600px;
+    left: 840px;
     top: 50px;
     position: absolute;
     background: white;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-
+  
   .Ellipse8 {
     width: 223px;
     height: 223px;
-    left: 620px;
+    left: 790px;
     top: 157px;
     position: absolute;
     background: #ff5f1f;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-
+  
   .Ellipse9 {
     width: 183px;
     height: 183px;
-    left: 740px;
-    top: 70px;
+    left: 960px;
+    top: 150px;
     position: absolute;
     background: #2c2b2b;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-
+  
   .Ellipse10 {
     width: 220px;
     height: 220px;
-    left: 890px;
+    left: 990px;
     top: 30px;
     position: absolute;
     background: #ff5f1f;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-
+  
   .Ellipse11 {
     width: 274px;
     height: 274px;
-    left: 800px;
-    top: 100px;
-    z-index: -1;
+    left: 1100px;
+    top: 70px;
     position: absolute;
     background: #2c2b2b;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-
+  
   .Ellipse12 {
     width: 160px;
     height: 160px;
-    left: 1000px;
-    top: 190px;
+    left: 1215px;
+    top: 225px;
     position: absolute;
     background: white;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-
+  
   .Ellipse13 {
     width: 321px;
     height: 321px;
-    left: 1100px;
-    top: -100px;
-    z-index: -1;
-    position: relative;
+    left: 1320px;
+    top: 53px;
+    position: absolute;
     background: #ff5f1f;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-
+  
   .Ellipse14 {
     width: 231px;
     height: 240px;
-    left: 1030px;
-    top: 20px;
-    z-index: -1;
+    left: 1550px;
+    top: 110px;
     position: absolute;
     background: #2c2b2b;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
+  
   .Ellipse15 {
-    display: none;
-  }
-
-  .Ellipse16 {
-    display: none;
-  }
-
-  .Ellipse17 {
-    display: none;
-  }
-}
-
-@media (max-width: 500px) {
-  .CircleDesign1 {
+    width: 140px;
+    height: 140px;
+    left: 1563px;
+    top: 60px;
     position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-    top: 710px;
-    z-index: 1;
-  }
-
-  .Ellipse1 {
-    width: 134px;
-    height: 134px;
-    left: -60px;
-    top: 157px;
-    position: absolute;
-    background: #ff5f1f;
-    box-shadow: 0px 4px 30px 6px rgba(0, 0, 0, 0.25);
-    border-radius: 9999px;
-  }
-
-  .Ellipse2 {
-    width: 158px;
-    height: 158px;
-    left: 0px;
-    top: 100px;
-    position: absolute;
-    background: #2c2b2b;
+    background: white;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-
-  .Ellipse3 {
+  
+  .Ellipse16 {
     width: 250px;
     height: 250px;
-    left: 119px;
-    top: 80px;
+    left: 1680px;
+    top: 30px;
     position: absolute;
     background: #ff5f1f;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-
-  .Ellipse4 {
-    width: 122px;
-    height: 122px;
-    left: 90px;
-    top: 65px;
-    z-index: -1;
+  
+  .Ellipse17 {
+    width: 206px;
+    height: 206px;
+    left: 1750px;
+    top: 188px;
     position: absolute;
-    background: white;
-    box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 9999px;
-  }
-
-  .Ellipse5 {
-    width: 160px;
-    height: 160px;
-    left: 320px;
-    top: 116px;
-    width: 1;
-    position: relative;
     background: #2c2b2b;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-
-  .Ellipse6 {
-    display: none;
+  
+  @media (max-width: 500px) {
+    .CircleDesign1 {
+      position: absolute; 
+      overflow: hidden;
+      width: 100%;
+      height: 100vh; 
+      top: 710px;
+      z-index: 1;
+    }
+  
+    .Ellipse1 {
+      width: 134px;
+      height: 134px;
+      left: -60px;
+      top: 157px;
+      position: absolute;
+      background: #ff5f1f;
+      box-shadow: 0px 4px 30px 6px rgba(0, 0, 0, 0.25);
+      border-radius: 9999px;
+    }
+  
+    .Ellipse2 {
+      width: 158px;
+      height: 158px;
+      left: 0px;
+      top: 100px;
+      position: absolute;
+      background: #2c2b2b;
+      box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 9999px;
+    }
+  
+    .Ellipse3 {
+      width: 250px;
+      height: 250px;
+      left: 119px;
+      top: 80px;
+      position: absolute;
+      background: #ff5f1f;
+      box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 9999px;
+    }
+  
+    .Ellipse4 {
+      width: 122px;
+      height: 122px;
+      left: 90px;
+      top: 65px;
+      z-index: -1;
+      position: absolute;
+      background: white;
+      box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 9999px;
+    }
+  
+    .Ellipse5 {
+      width: 160px;
+      height: 160px;
+      left: 320px;
+      top: 116px;
+      width: 1;
+      position: relative;
+      background: #2c2b2b;
+      box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 9999px;
+    }
+  
+    .Ellipse6 {
+      display: none;
+    }
+  
+    .Ellipse7 {
+      width: 170px;
+      height: 170px;
+      left: 280px;
+      z-index: -2;
+      top: 50px;
+  
+      position: absolute;
+      background: white;
+      box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 9999px;
+    }
+  
+    .Ellipse8 {
+      display: none;
+    }
+  
+    .Ellipse9 {
+      display: none;
+    }
+  
+    .Ellipse10 {
+      display: none;
+    }
+  
+    .Ellipse11 {
+      display: none;
+    }
+  
+    .Ellipse12 {
+      display: none;
+    }
+  
+    .Ellipse13 {
+      display: none;
+    }
+  
+    .Ellipse14 {
+      display: none;
+    }
+  
+    .Ellipse15 {
+      display: none;
+    }
+  
+    .Ellipse16 {
+      display: none;
+    }
+  
+    .Ellipse17 {
+      display: none;
+    }
   }
-
-  .Ellipse7 {
-    width: 170px;
-    height: 170px;
-    left: 280px;
-    z-index: -2;
-    top: 50px;
-    position: absolute;
-    background: white;
-    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 9999px;
-  }
-
-  .Ellipse8 {
-    display: none;
-  }
-
-  .Ellipse9 {
-    display: none;
-  }
-
-  .Ellipse10 {
-    display: none;
-  }
-
-  .Ellipse11 {
-    display: none;
-  }
-
-  .Ellipse12 {
-    display: none;
-  }
-
-  .Ellipse13 {
-    display: none;
-  }
-
-  .Ellipse14 {
-    display: none;
-  }
-
-  .Ellipse15 {
-    display: none;
-  }
-
-  .Ellipse16 {
-    display: none;
-  }
-
-  .Ellipse17 {
-    display: none;
-  }
-}
 
 /* --------------------- About Me Section ----------------------*/
 
@@ -1833,7 +1651,7 @@ main.row {
     position: absolute;
     overflow: hidden;
     width: 100%;
-    top: 2800px;
+    top: 2850px;
     z-index: 1;
   }
 }
@@ -1844,7 +1662,7 @@ main.row {
     overflow: hidden;
     width: 100%;
     height: 50vh;
-    top: 3900px;
+    top: 3950px;
     z-index: 1;
   }
 
