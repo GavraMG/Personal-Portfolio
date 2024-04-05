@@ -1,48 +1,48 @@
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: "MonumentExtended";
-  }
-  
-  @font-face {
-    font-family: "MonumentExtended";
-    src: url(fonts/MONUMENTEXTENDED-REGULAR.OTF);
-  }
-  
-  /*--------------------------------------------- Page #1 - Homepage / About Me / Education / Experiences ---------------------------------------------*/
-  
-  body {
-    min-height: 100vh;
-    background-color: #ffffff;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow-x: hidden;
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  
-  /* --------------------- Header ----------------------*/
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "MonumentExtended";
+}
+
+@font-face {
+  font-family: "MonumentExtended";
+  src: url(fonts/MONUMENTEXTENDED-REGULAR.OTF);
+}
+
+/*--------------------------------------------- Page #1 - Homepage / About Me / Education / Experiences ---------------------------------------------*/
+
+body {
+  min-height: 100vh;
+  background-color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: hidden;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* --------------------- Header ----------------------*/
 
 header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    height: 70px; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
-    transition: 0.8s;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  transition: 0.8s;
 }
 
 header.sticky {
-    padding: 0 30px;
-    background-color: transparent;
+  padding: 0 30px;
+  background-color: transparent;
 }
 
 header.sticky .logo,
@@ -63,565 +63,926 @@ header.sticky .hamburger div {
 }
 
 header .logo {
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 header nav ul {
-    display: flex;
+  display: flex;
 }
 
 header nav ul li a {
-    display: inline-block;
-    color: #ffffff;
-    font-weight: 500;
-    padding: 5px 0;
-    margin: 0 30px;
-    border: 3px solid transparent;
-    text-transform: uppercase;
-    transition: 0.3s;
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0 30px;
+  border: 3px solid transparent;
+  text-transform: uppercase;
+  transition: 0.3s;
 }
 
 header nav ul li a:hover,
 header nav ul li a.active {
-    border-bottom-color: #ff5f1f;
+  border-bottom-color: #ff5f1f;
 }
 
 .hamburger {
-    cursor: pointer;
-    display: none;
+  cursor: pointer;
+  display: none;
 }
 
 .hamburger div {
-    width: 30px;
-    height: 3px;
-    margin: 5px 0;
-    background: #FFFFFF;
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background: #ffffff;
 }
 
-.background  {
-    background-color: #1c1c1c; 
-    background-size: cover;
-    height: 950px; 
-    background-position: center; 
-    background-repeat: no-repeat;
+.background {
+  background-color: #1c1c1c;
+  background-size: cover;
+  height: 950px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 4500px) {
-    .nav_logo {
-      display: none;
-    }
+  .nav_logo {
+    display: none;
   }
-  
-  @media (max-width: 1500px) {
-    .hamburger {
-      display: block;
-      z-index: 3;
-    }
-  
-    header nav {
-      position: fixed;
-      width: 100%;
-      left: -100%;
-      top: 0;
-      background-color: #ffffff;
-      width: 30%;
-      height: 100000px;
-      padding-left: 30px;
-      padding-top: 80px;
-      transition: 0.4s;
-      z-index: 3;
-    }
-  
-    header #nav_check:checked ~ nav {
-      left: 0;
-    }
-  
-    header nav ul {
-      display: block;
-    }
-  
-    header nav ul li a {
-      margin: 5px 0;
-      font-size: 16px;
-      color: #1c1c1c;
-      font-weight: 400;
-    }
-  
-    .nav_logo {
-      font-size: 25px;
-      position: absolute;
-      margin-top: -65px;
-      display: flex;
-      font-weight: 500;
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .hamburger {
-      display: block;
-      z-index: 3;
-    }
-  
-    header nav {
-      position: fixed;
-      width: 100%;
-      left: -100%;
-      top: 0;
-      background-color: #ffffff;
-      width: 220px;
-      height: 100000px;
-      padding-left: 30px;
-      padding-top: 80px;
-      transition: 0.4s;
-      z-index: 3;
-    }
-  
-    header #nav_check:checked ~ nav {
-      left: 0;
-    }
-  
-    header nav ul {
-      display: block;
-    }
-  
-    header nav ul li a {
-      margin: 5px 0;
-      font-size: 18px;
-      color: #1c1c1c;
-      font-weight: 500;
-    }
-  
-    .nav_logo {
-      font-size: 30px;
-      position: absolute;
-      margin-top: -60px;
-      display: flex;
-      font-weight: 500;
-    }
+}
+
+@media (max-width: 1500px) {
+  .hamburger {
+    display: block;
+    z-index: 3;
   }
 
+  header nav {
+    position: fixed;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background-color: #ffffff;
+    width: 30%;
+    height: 100000px;
+    padding-left: 30px;
+    padding-top: 80px;
+    transition: 0.4s;
+    z-index: 3;
+  }
+
+  header #nav_check:checked ~ nav {
+    left: 0;
+  }
+
+  header nav ul {
+    display: block;
+  }
+
+  header nav ul li a {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #1c1c1c;
+    font-weight: 400;
+  }
+
+  .nav_logo {
+    font-size: 25px;
+    position: absolute;
+    margin-top: -65px;
+    display: flex;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 500px) {
+  .hamburger {
+    display: block;
+    z-index: 3;
+  }
+
+  header nav {
+    position: fixed;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background-color: #ffffff;
+    width: 220px;
+    height: 100000px;
+    padding-left: 30px;
+    padding-top: 80px;
+    transition: 0.4s;
+    z-index: 3;
+  }
+
+  header #nav_check:checked ~ nav {
+    left: 0;
+  }
+
+  header nav ul {
+    display: block;
+  }
+
+  header nav ul li a {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #1c1c1c;
+    font-weight: 500;
+  }
+
+  .nav_logo {
+    font-size: 30px;
+    position: absolute;
+    margin-top: -60px;
+    display: flex;
+    font-weight: 500;
+  }
+}
+
 .HomepageText {
-    font-family: "MonumentExtended";
+  font-family: "MonumentExtended";
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  padding: 60px;
+  z-index: 1;
+}
+
+.HomepageText .Markus {
+  color: transparent;
+  font-size: 120px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 4px #ffffff;
+}
+
+.HomepageText .Gavra {
+  color: transparent;
+  font-size: 120px;
+  text-transform: uppercase;
+  margin-top: -40px;
+  -webkit-text-stroke: 4px #ff5f1f;
+  padding-bottom: 15px;
+}
+
+.HomepageText .SoftwareEngineerWebDesignStudent {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 500;
+  padding-left: 11px;
+}
+
+@media (max-width: 1400px) {
+  .HomepageText {
     position: absolute;
     top: 200px;
-    left: 20px;
-    padding: 60px;
+    left: 10px;
+    padding-left: 2px;
     z-index: 1;
   }
-  
+
   .HomepageText .Markus {
-    color: transparent;
-    font-size: 120px;
+    font-weight: 400;
+    font-size: 100px;
+    padding-left: 21px;
     text-transform: uppercase;
     -webkit-text-stroke: 4px #ffffff;
   }
-  
+
   .HomepageText .Gavra {
-    color: transparent;
-    font-size: 120px;
+    font-weight: 400;
+    font-size: 100px;
+    padding-left: 21px;
+    padding-top: 10px;
     text-transform: uppercase;
-    margin-top: -40px;
     -webkit-text-stroke: 4px #ff5f1f;
-    padding-bottom: 15px;
   }
-  
+
   .HomepageText .SoftwareEngineerWebDesignStudent {
     font-size: 30px;
     color: #ffffff;
     font-weight: 500;
-    padding-left: 11px;
+    padding-left: 21px;
   }
-  
-  @media (max-width: 1400px) {
-    .HomepageText {
-      position: absolute;
-      top: 200px;
-      left: 10px;
-      padding-left: 2px;
-      z-index: 1;
-    }
-  
-    .HomepageText .Markus {
-      font-weight: 400;
-      font-size: 100px;
-      padding-left: 21px;
-      text-transform: uppercase;
-      -webkit-text-stroke: 4px #ffffff;
-    }
-  
-    .HomepageText .Gavra {
-      font-weight: 400;
-      font-size: 100px;
-      padding-left: 21px;
-      padding-top: 10px;
-      text-transform: uppercase;
-      -webkit-text-stroke: 4px #ff5f1f;
-    }
-  
-    .HomepageText .SoftwareEngineerWebDesignStudent {
-      font-size: 30px;
-      color: #ffffff;
-      font-weight: 500;
-      padding-left: 21px;
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .HomepageText {
-      position: absolute;
-      top: 250px;
-      left: 10px;
-      padding-left: 2px;
-      z-index: 1;
-    }
-  
-    .HomepageText .Markus {
-      color: #ffffff;
-      font-weight: 400;
-      font-size: 50px;
-      padding-left: 21px;
-      text-transform: uppercase;
-      -webkit-text-stroke: #ffffff;
-    }
-  
-    .HomepageText .Gavra {
-      color: #ff5f1f;
-      font-weight: 400;
-      font-size: 50px;
-      padding-left: 21px;
-      padding-top: 40px;
-      text-transform: uppercase;
-      -webkit-text-stroke: #ff5f1f;
-    }
-  
-    .HomepageText .SoftwareEngineerWebDesignStudent {
-      font-size: 18px;
-      color: #ffffff;
-      font-weight: 400;
-      padding-left: 21px;
-      line-height: 30px;
-      padding-top: 0px;
-    }
+}
+
+@media (max-width: 500px) {
+  .HomepageText {
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    padding-left: 2px;
+    z-index: 1;
   }
 
-  /* --------------------- Circle Design For Homepage ----------------------*/
+  .HomepageText .Markus {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 50px;
+    padding-left: 21px;
+    text-transform: uppercase;
+    -webkit-text-stroke: #ffffff;
+  }
+
+  .HomepageText .Gavra {
+    color: #ff5f1f;
+    font-weight: 400;
+    font-size: 50px;
+    padding-left: 21px;
+    padding-top: 40px;
+    text-transform: uppercase;
+    -webkit-text-stroke: #ff5f1f;
+  }
+
+  .HomepageText .SoftwareEngineerWebDesignStudent {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    padding-left: 21px;
+    line-height: 30px;
+    padding-top: 0px;
+  }
+}
+
+/* --------------------- Circle Design For Homepage ----------------------*/
 
 .CircleDesign1 {
+  position: absolute;
+  top: 780px;
+}
+
+.Ellipse1 {
+  width: 134px;
+  height: 134px;
+  left: -50px;
+  top: 147px;
+  position: absolute;
+  background: #ff5f1f;
+  box-shadow: 0px 4px 30px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 9999px;
+}
+
+.Ellipse2 {
+  width: 158px;
+  height: 158px;
+  left: 25px;
+  top: 100px;
+  position: absolute;
+  background: #2c2b2b;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9999px;
+}
+
+.Ellipse3 {
+  width: 289px;
+  height: 289px;
+  left: 139px;
+  top: 55px;
+  position: absolute;
+  background: #ff5f1f;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9999px;
+}
+
+.Ellipse4 {
+  width: 162px;
+  height: 162px;
+  left: 367px;
+  top: 55px;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9999px;
+}
+
+.Ellipse5 {
+  width: 160px;
+  height: 160px;
+  left: 400px;
+  top: 136px;
+  position: absolute;
+  background: #ff5f1f;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9999px;
+}
+
+.Ellipse6 {
+  width: 374px;
+  height: 374px;
+  left: 500px;
+  top: 20px;
+  position: absolute;
+  background: #2c2b2b;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9999px;
+}
+
+.Ellipse7 {
+  width: 170px;
+  height: 170px;
+  left: 840px;
+  top: 50px;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9999px;
+}
+
+.Ellipse8 {
+  width: 223px;
+  height: 223px;
+  left: 790px;
+  top: 157px;
+  position: absolute;
+  background: #ff5f1f;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9999px;
+}
+
+.Ellipse9 {
+  width: 183px;
+  height: 183px;
+  left: 960px;
+  top: 150px;
+  position: absolute;
+  background: #2c2b2b;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9999px;
+}
+
+.Ellipse10 {
+  width: 220px;
+  height: 220px;
+  left: 990px;
+  top: 30px;
+  position: absolute;
+  background: #ff5f1f;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9999px;
+}
+
+.Ellipse11 {
+  width: 274px;
+  height: 274px;
+  left: 1100px;
+  top: 70px;
+  position: absolute;
+  background: #2c2b2b;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9999px;
+}
+
+.Ellipse12 {
+  width: 160px;
+  height: 160px;
+  left: 1215px;
+  top: 225px;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9999px;
+}
+
+.Ellipse13 {
+  width: 321px;
+  height: 321px;
+  left: 1320px;
+  top: 53px;
+  position: absolute;
+  background: #ff5f1f;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9999px;
+}
+
+.Ellipse14 {
+  width: 231px;
+  height: 240px;
+  left: 1550px;
+  top: 110px;
+  position: absolute;
+  background: #2c2b2b;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9999px;
+}
+
+.Ellipse15 {
+  width: 140px;
+  height: 140px;
+  left: 1563px;
+  top: 60px;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9999px;
+}
+
+.Ellipse16 {
+  width: 250px;
+  height: 250px;
+  left: 1680px;
+  top: 30px;
+  position: absolute;
+  background: #ff5f1f;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9999px;
+}
+
+.Ellipse17 {
+  width: 206px;
+  height: 206px;
+  left: 1750px;
+  top: 188px;
+  position: absolute;
+  background: #2c2b2b;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9999px;
+}
+
+@media (max-width: 500px) {
+  .CircleDesign1 {
     position: absolute;
-    top: 780px;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    top: 710px;
+    z-index: 1;
   }
-  
+
   .Ellipse1 {
     width: 134px;
     height: 134px;
-    left: -50px;
-    top: 147px;
+    left: -60px;
+    top: 157px;
     position: absolute;
     background: #ff5f1f;
     box-shadow: 0px 4px 30px 6px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-  
+
   .Ellipse2 {
     width: 158px;
     height: 158px;
-    left: 25px;
+    left: 0px;
     top: 100px;
     position: absolute;
     background: #2c2b2b;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-  
+
   .Ellipse3 {
-    width: 289px;
-    height: 289px;
-    left: 139px;
-    top: 55px;
+    width: 250px;
+    height: 250px;
+    left: 119px;
+    top: 80px;
     position: absolute;
     background: #ff5f1f;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-  
+
   .Ellipse4 {
-    width: 162px;
-    height: 162px;
-    left: 367px;
-    top: 55px;
+    width: 122px;
+    height: 122px;
+    left: 90px;
+    top: 65px;
+    z-index: -1;
     position: absolute;
     background: white;
     box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-  
+
   .Ellipse5 {
     width: 160px;
     height: 160px;
-    left: 400px;
-    top: 136px;
-    position: absolute;
-    background: #ff5f1f;
-    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 9999px;
-  }
-  
-  .Ellipse6 {
-    width: 374px;
-    height: 374px;
-    left: 500px;
-    top: 20px;
-    position: absolute;
+    left: 320px;
+    top: 116px;
+    width: 1;
+    position: relative;
     background: #2c2b2b;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-  
+
+  .Ellipse6 {
+    display: none;
+  }
+
   .Ellipse7 {
     width: 170px;
     height: 170px;
-    left: 840px;
+    left: 280px;
+    z-index: -2;
     top: 50px;
+
     position: absolute;
     background: white;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 9999px;
   }
-  
+
   .Ellipse8 {
-    width: 223px;
-    height: 223px;
-    left: 790px;
-    top: 157px;
-    position: absolute;
-    background: #ff5f1f;
-    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 9999px;
+    display: none;
   }
-  
+
   .Ellipse9 {
-    width: 183px;
-    height: 183px;
-    left: 960px;
-    top: 150px;
-    position: absolute;
-    background: #2c2b2b;
-    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 9999px;
+    display: none;
   }
-  
+
   .Ellipse10 {
-    width: 220px;
-    height: 220px;
-    left: 990px;
-    top: 30px;
-    position: absolute;
-    background: #ff5f1f;
-    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 9999px;
+    display: none;
   }
-  
+
   .Ellipse11 {
-    width: 274px;
-    height: 274px;
-    left: 1100px;
-    top: 70px;
-    position: absolute;
-    background: #2c2b2b;
-    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 9999px;
+    display: none;
   }
-  
+
   .Ellipse12 {
-    width: 160px;
-    height: 160px;
-    left: 1215px;
-    top: 225px;
-    position: absolute;
-    background: white;
-    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 9999px;
+    display: none;
   }
-  
+
   .Ellipse13 {
-    width: 321px;
-    height: 321px;
-    left: 1320px;
-    top: 53px;
-    position: absolute;
-    background: #ff5f1f;
-    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 9999px;
+    display: none;
   }
-  
+
   .Ellipse14 {
-    width: 231px;
-    height: 240px;
-    left: 1550px;
-    top: 110px;
-    position: absolute;
-    background: #2c2b2b;
-    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 9999px;
+    display: none;
   }
-  
+
   .Ellipse15 {
-    width: 140px;
-    height: 140px;
-    left: 1563px;
-    top: 60px;
-    position: absolute;
-    background: white;
-    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 9999px;
+    display: none;
   }
-  
+
   .Ellipse16 {
-    width: 250px;
-    height: 250px;
-    left: 1680px;
-    top: 30px;
-    position: absolute;
-    background: #ff5f1f;
-    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 9999px;
+    display: none;
   }
-  
+
   .Ellipse17 {
-    width: 206px;
-    height: 206px;
-    left: 1750px;
-    top: 188px;
-    position: absolute;
-    background: #2c2b2b;
-    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 9999px;
+    display: none;
+  }
+}
+
+/* --------------------- About Me Section ----------------------*/
+
+.About_Me {
+  padding-top: 1300px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.About_content {
+  position: relative;
+  padding-bottom: 100px;
+  padding-left: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 540px;
+  height: 640px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; /* Adjust as needed */
+}
+
+.header {
+  flex-basis: 65%;
+}
+
+.header h1 {
+  font-size: 70px;
+  color: transparent;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #1c1c1c;
+}
+
+.header p {
+  font-size: 18px;
+  padding-top: 10px;
+  line-height: 34px;
+
+  color: #1c1c1c;
+}
+
+.button {
+  padding-top: 30px;
+}
+
+.skills-toggle {
+  background: #1c1c1c;
+  position: relative;
+  width: max-content;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.4);
+  z-index: 1;
+}
+
+.skills-toggle::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  width: 120px;
+  background: hsl(24, 74%, 58%);
+  border-radius: 6px;
+  transition: 0.25s ease-in-out;
+  z-index: -1;
+}
+
+.skills-toggle.active::before {
+  left: 128px;
+  width: 154.5px;
+}
+
+.toggle-btn {
+  color: #ffffff;
+  padding: 5px 28.5px;
+  transition: 0.25s ease-in-out;
+}
+
+.toggle-btn.active {
+  color: #ffffff;
+}
+
+.toggle-btn {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+}
+
+.skills .card-icon {
+  width: 60px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+}
+
+.skills .special-icon img {
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+}
+
+.skills .windows-icon img {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+}
+
+.skills .card-icon img {
+  width: 75%;
+}
+
+.tooltip {
+  position: absolute;
+  background: hsl(24, 74%, 58%);
+  min-width: max-content;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 4px;
+  box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.4);
+  transform: translateY(-10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease-in-out;
+  z-index: 1;
+}
+
+.skills {
+  padding-top: 40px;
+}
+
+.skills-box.active .skills-list,
+.skills-box .tools-list {
+  display: none;
+}
+
+.skills-box .skills-list,
+.skills-box.active .tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-card {
+  position: relative;
+  background: #1c1c1c;
+  width: 80px;
+  height: 80px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.4);
+  cursor: help;
+}
+
+.skill-card:hover .tooltip {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.skills-toggle {
+  margin-inline: 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  width: calc((80px * 8) + (15px * 4));
+}
+
+.tools-list {
+  font-size: 15px;
+  width: 400px;
+}
+
+@media (max-width: 1400px) {
+  .About_content {
+    position: relative;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .image {
+    width: 460px;
+    height: 580px;
+    border-radius: 40px;
+    overflow: hidden;
+  }
+
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* Adjust as needed */
+  }
+
+  .header {
+    flex-basis: 61%;
+    padding-left: 10px;
+  }
+
+  .header h1 {
+    font-size: 50px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #1c1c1c;
+  }
+
+  .header p {
+    font-size: 14px;
+    padding-top: 10px;
+    line-height: 34px;
+    color: #1c1c1c;
+    width: 750px;
+  }
+
+  .tools-list {
+    font-size: 13px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .About_Me {
+    padding-top: 1200px;
+    padding-bottom: 80px;
+    position: relative;
+  }
+
+  .About_content {
+    position: relative;
+    padding-bottom: 100px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .header {
+    flex-basis: 61%;
+    padding-left: 100px;
+  }
+
+  .header h1 {
+    font-size: 50px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #1c1c1c;
+  }
+
+  .header p {
+    font-size: 14px;
+    padding-top: 10px;
+    line-height: 34px;
+    color: #1c1c1c;
+    width: 850px;
+  }
+
+  .tools-list {
+    font-size: 13px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .About_Me {
+    padding-top: 1150px;
+    padding-bottom: 80px;
+    position: relative;
+  }
+
+  .About_content {
+    position: relative;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .image {
+    width: 0px;
+    height: 0px;
+    display: none;
   }
   
-  @media (max-width: 500px) {
-    .CircleDesign1 {
-      position: absolute; 
-      overflow: hidden;
-      width: 100%;
-      height: 100vh; 
-      top: 710px;
-      z-index: 1;
-    }
-  
-    .Ellipse1 {
-      width: 134px;
-      height: 134px;
-      left: -60px;
-      top: 157px;
-      position: absolute;
-      background: #ff5f1f;
-      box-shadow: 0px 4px 30px 6px rgba(0, 0, 0, 0.25);
-      border-radius: 9999px;
-    }
-  
-    .Ellipse2 {
-      width: 158px;
-      height: 158px;
-      left: 0px;
-      top: 100px;
-      position: absolute;
-      background: #2c2b2b;
-      box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-      border-radius: 9999px;
-    }
-  
-    .Ellipse3 {
-      width: 250px;
-      height: 250px;
-      left: 119px;
-      top: 80px;
-      position: absolute;
-      background: #ff5f1f;
-      box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-      border-radius: 9999px;
-    }
-  
-    .Ellipse4 {
-      width: 122px;
-      height: 122px;
-      left: 90px;
-      top: 65px;
-      z-index: -1;
-      position: absolute;
-      background: white;
-      box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
-      border-radius: 9999px;
-    }
-  
-    .Ellipse5 {
-      width: 160px;
-      height: 160px;
-      left: 320px;
-      top: 116px;
-      width: 1;
-      position: relative;
-      background: #2c2b2b;
-      box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-      border-radius: 9999px;
-    }
-  
-    .Ellipse6 {
-      display: none;
-    }
-  
-    .Ellipse7 {
-      width: 170px;
-      height: 170px;
-      left: 280px;
-      z-index: -2;
-      top: 50px;
-  
-      position: absolute;
-      background: white;
-      box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-      border-radius: 9999px;
-    }
-  
-    .Ellipse8 {
-      display: none;
-    }
-  
-    .Ellipse9 {
-      display: none;
-    }
-  
-    .Ellipse10 {
-      display: none;
-    }
-  
-    .Ellipse11 {
-      display: none;
-    }
-  
-    .Ellipse12 {
-      display: none;
-    }
-  
-    .Ellipse13 {
-      display: none;
-    }
-  
-    .Ellipse14 {
-      display: none;
-    }
-  
-    .Ellipse15 {
-      display: none;
-    }
-  
-    .Ellipse16 {
-      display: none;
-    }
-  
-    .Ellipse17 {
-      display: none;
-    }
+
+  .header {
+    padding: 0px;
+    flex-basis: 65%;
   }
+
+  .header h1 {
+    font-size: 50px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #1c1c1c;
+  }
+
+  .header p {
+    font-size: 14px;
+    padding-top: 20px;
+    line-height: 34px;
+    width: 380px;
+    font-weight: 700;
+    color: #1c1c1c;
+  }
+
+  .skills-box .skills-list,
+  .skills-box.active .tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    gap: 15px;
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .tools-list {
+    font-size: 12px;
+    padding-bottom: 120px;
+  }
+}
+
