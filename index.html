@@ -3,12 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Markus Gavra</title>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -17,309 +13,41 @@
     <script src="script.js" defer></script>
   </head>
 
-  <!-- Markus Gavra (1277056) -->
-  <!-- mgavra@uoguelph.ca -->
-
-  <!--------------------------------------------- Page #1 - Homepage / About Me / Education / Experiences --------------------------------------------->
-
   <body>
-    <!--------------------------------------------- Header / Navbar --------------------------------------------->
+    <body>
 
-    <header id="header">
-      <div class="logo">MG</div>
-      <input type="checkbox" id="nav_check" hidden />
-      <nav>
-        <ul>
-          <li><a href="#" class="nav_logo">MG </a></li>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Reach Out</a></li>
-        </ul>
-      </nav>
+        <!--------------------------------------------- Header --------------------------------------------->
+        <div class="background">
+        <header id="header">
+            <div class="logo">MG</div>
+            <input type="checkbox" id="nav_check" hidden>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav_logo">MG </a></li>
+                    <li><a href="#header" class="active">Home</a></li>
+                    <li><a href="#Services">About Me</a></li>
+                    <li><a href="#About Us">Projects</a></li>
+                    <li><a href="#Photo Gallery">Reach Out</a></li>
+                </ul>
+            </nav>
+            
+            <label for="nav_check" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+        </header>
+            <div class="HomepageText">
+                <div class="Markus">Markus</div>
+                <div class="Gavra">Gavra</div>
+                <div class="SoftwareEngineerWebDesignStudent">
+                  SOFTWARE ENGINEER & Web DESIGN STUDENT
+            </div>
+        </div>
 
-      <label for="nav_check" class="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </label>
-    </header>
-
-    <!----------------------------- Homepage Section  ----------------------------->
-
-    <div class="background"></div>
-    <div class="HomepageText">
-      <div class="Markus">Markus</div>
-      <div class="Gavra">Gavra</div>
-      <div class="SoftwareEngineerWebDesignStudent">
-        SOFTWARE ENGINEER & Web DESIGN STUDENT
-      </div>
-    </div>
-
-    <!------------------------------- Circle Design Transition ------------------------------->
+        <!------------------------------- Circle Design Transition ------------------------------->
 
     <div class="CircleDesign1">
-      <div class="Ellipse1"></div>
-      <div class="Ellipse2"></div>
-      <div class="Ellipse3"></div>
-      <div class="Ellipse4"></div>
-      <div class="Ellipse5"></div>
-      <div class="Ellipse6"></div>
-      <div class="Ellipse7"></div>
-      <div class="Ellipse8"></div>
-      <div class="Ellipse9"></div>
-      <div class="Ellipse10"></div>
-      <div class="Ellipse11"></div>
-      <div class="Ellipse12"></div>
-      <div class="Ellipse13"></div>
-      <div class="Ellipse14"></div>
-      <div class="Ellipse15"></div>
-      <div class="Ellipse16"></div>
-      <div class="Ellipse17"></div>
-    </div>
-
-    <!--------------------------------------------- About Me Section --------------------------------------------->
-
-    <section class="About_Me">
-      <div class="About_content">
-        <div class="image">
-          <img src="Icons/MG.jpg" alt="" />
-        </div>
-        <div class="header">
-          <h1>About Me</h1>
-          <p>
-            Hi, I'm Markus Gavra, welcome to my page! I'm a Romanian student at
-            the University of Guelph in Breslau, Ontario, specializing in
-            Software Engineering. I'm passionate about solving digital
-            challenges and see every obstacle as a chance for growth. When not
-            coding, I focus on fitness and strength training. Dive into my world
-            where technology and determination collide!
-          </p>
-
-          <div class="button">
-            <div class="skills-toggle" data-toggle-box>
-              <button class="toggle-btn active" data-toggle-btn>Skills</button>
-
-              <button class="toggle-btn" data-toggle-btn>Hobbies</button>
-            </div>
-          </div>
-
-          <div class="skills" id="skills">
-            <div class="skills-box" data-skills-box>
-              <ul class="skills-list">
-                <li>
-                  <div class="skill-card">
-                    <div class="tooltip">HTML5</div>
-
-                    <div class="card-icon">
-                      <img src="Icons/HTML.svg" alt="HTML5 logo" />
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="skill-card">
-                    <div class="tooltip">CSS3</div>
-
-                    <div class="card-icon">
-                      <img src="Icons/CSS.svg" alt="CSS3 logo" />
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="skill-card">
-                    <div class="tooltip">JavaScript</div>
-
-                    <div class="card-icon">
-                      <img src="Icons/javascript.png" alt="JavaScript logo" />
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="skill-card">
-                    <div class="tooltip">Java</div>
-
-                    <div class="special-icon">
-                      <img src="Icons/Java.png" alt="Java logo" />
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="skill-card">
-                    <div class="tooltip">Python</div>
-
-                    <div class="special-icon">
-                      <img src="Icons/python.svg" alt="Python logo" />
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="skill-card">
-                    <div class="tooltip">C</div>
-
-                    <div class="special-icon">
-                      <img src="Icons/C.svg" alt="C logo" />
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="skill-card">
-                    <div class="tooltip">Firebase</div>
-
-                    <div class="card-icon">
-                      <img src="Icons/firebase.png" alt="Firebase logo" />
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="skill-card">
-                    <div class="tooltip">Github</div>
-
-                    <div class="special-icon">
-                      <img src="Icons/Github.svg" alt="Github logo" />
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="skill-card">
-                    <div class="tooltip">Git</div>
-
-                    <div class="special-icon">
-                      <img src="Icons/Git.svg" alt="Git logo" />
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="skill-card">
-                    <div class="tooltip">Figma</div>
-
-                    <div class="special-icon">
-                      <img src="Icons/Figma.svg" alt="Figma logo" />
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="skill-card">
-                    <div class="tooltip">Windows</div>
-
-                    <div class="windows-icon">
-                      <img src="Icons/Windows.svg" alt="Git logo" />
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="skill-card">
-                    <div class="tooltip">Linux</div>
-
-                    <div class="special-icon">
-                      <img src="Icons/Linux.svg" alt="Linux logo" />
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="skill-card">
-                    <div class="tooltip">Vs Code</div>
-
-                    <div class="special-icon">
-                      <img src="Icons/VS Code.svg" alt="Vs code logo" />
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="skill-card">
-                    <div class="tooltip">Spline 3D</div>
-
-                    <div class="card-icon">
-                      <img src="Icons/Spline.png" alt="Spline 3D logo" />
-                    </div>
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="tools-list">
-                <h2>➤ Web Developer</h2>
-                <h2>➤ Construction Hobbyist</h2>
-                <h2>➤ F1 Enthusiast</h2>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--------------------------------------------- Education / Experience Section --------------------------------------------->
-
-    <div class="container">
-      <main class="row">
-        <section class="col">
-          <header class="title">
-            <h2>EDUCATION</h2>
-          </header>
-
-          <div class="contents">
-            <div class="box">
-              <h4>2019 - 2023</h4>
-              <h3>High School Degree</h3>
-              <p>Grand River Collegiate Institute</p>
-              <p>Average: 91%</p>
-            </div>
-
-            <div class="box">
-              <h4>2023 - 2028</h4>
-              <h3>Bachelor’s of Computing (Software Engineering)</h3>
-              <p>University of Guelph</p>
-              <p>Current Average: 84%</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="col">
-          <header class="title">
-            <h2>EXPERIENCE</h2>
-          </header>
-
-          <div class="contents">
-            <div class="box">
-              <h4>2021 - Present</h4>
-              <h3>Project Manager</h3>
-              <p>Company: European Quality Painting</p>
-              <p>Skills: Leadership, Communication, Team Work</p>
-            </div>
-
-            <div class="box">
-              <h4>2024 - Present</h4>
-              <h3>UI Designer</h3>
-              <p>Organization: Eclipse Expos</p>
-              <p>Skills: Creativity, Collaboration, Team Work</p>
-            </div>
-
-            <div class="box">
-              <h4>2024 - Present</h4>
-              <h3>Event Committee Member</h3>
-              <p>Organization: SOCIS - University of Guelph</p>
-              <p>Skills: Organization, Team Work, Multitasking</p>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
-
-    <!------------------------------- Circle Design Transition ------------------------------->
-
-    <section>
-      <div class="CircleDesign2">
         <div class="Ellipse1"></div>
         <div class="Ellipse2"></div>
         <div class="Ellipse3"></div>
@@ -338,38 +66,6 @@
         <div class="Ellipse16"></div>
         <div class="Ellipse17"></div>
       </div>
-
-      <!--------------------------------------------- Footer --------------------------------------------->
-
-      <footer>
-        <div class="footerContainer">
-          <div class="socialIcons">
-            <li>
-              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-            </li>
-            <li>
-              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-            </li>
-            <li>
-              <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-            </li>
-          </div>
-          <div class="footerNav">
-            <ul>
-              <li><a href="#header">Home</a></li>
-              <li><a href="#Services">About Me</a></li>
-              <li><a href="#About Us">Projects</a></li>
-              <li><a href="#Photo Gallery">Reach Out</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footerBottom">
-          <p>
-            Copyright &copy;2024; Designed by
-            <a href="https://github.com/GavraMG">Markus Gavra</a>
-          </p>
-        </div>
-      </footer>
-    </section>
   </body>
 </html>
+
