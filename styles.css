@@ -1387,7 +1387,7 @@ main.row {
   .container {
     max-width: 500px;
     width: 100%;
-    padding: 0 20px 300px;
+    padding: 0 15px 300px;
   }
 
   main.row {
@@ -1651,7 +1651,7 @@ main.row {
     position: absolute;
     overflow: hidden;
     width: 100%;
-    top: 2950px;
+    top: 2850px;
     z-index: 1;
   }
 
@@ -1832,7 +1832,7 @@ main.row {
     position: absolute;
     overflow: hidden;
     width: 100%;
-    top: 2900px;
+    top: 2800px;
     z-index: 1;
   }
 }
