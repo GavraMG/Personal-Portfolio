@@ -1249,11 +1249,10 @@ main.row {
 @media (max-width: 1400px) {
   .container {
     width: 1400px;
-    padding-left: 100px;
-  }
-
-  .container {
-    padding-right: calc(10% - 30px);
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 0px;
+    padding-bottom: 300px;
   }
 
   .col header.title h2 {
@@ -1261,6 +1260,12 @@ main.row {
     font-size: 50px;
     color: transparent;
     padding: 0px 0px 20px 20px;
+  }
+
+  main.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
   }
 
   .col .contents {
@@ -1312,11 +1317,10 @@ main.row {
 @media (max-width: 1100px) {
   .container {
     width: 1100px;
-    padding-left: 20px;
-  }
-
-  .container {
-    padding-right: calc(10% - 30px);
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 0px;
+    padding-bottom: 300px;
   }
 
   .col header.title h2 {
@@ -1324,6 +1328,12 @@ main.row {
     font-size: 50px;
     color: transparent;
     padding: 0px 0px 20px 20px;
+  }
+
+  main.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
   }
 
   .col .contents {
@@ -1374,12 +1384,11 @@ main.row {
 
 @media (max-width: 500px) {
   .container {
-    width: 400px;
-    padding-left: 20px;
-  }
-
-  .container {
-    padding-right: calc(10% - 30px);
+    width: 500px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 0px;
+    padding-bottom: 300px;
   }
 
   main.row {
