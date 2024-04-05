@@ -2087,6 +2087,10 @@ footer {
         font-weight: 400;
         margin: 0px 5px;
       }
+
+      .footerContainer, .footerBottom {
+        margin-bottom: -5px;
+      }
 }
 
 @media (max-width: 500px) {
@@ -2139,5 +2143,9 @@ footer {
     letter-spacing: 1px;
     font-weight: 400;
     margin: 0px 5px;
+  }
+  
+  .footerContainer, .footerBottom {
+    margin-bottom: -5px;
   }
 }
