@@ -310,8 +310,9 @@ header nav ul li a.active {
 /* --------------------- Circle Design For Homepage ----------------------*/
 
 .CircleDesign1 {
-  position: absolute;
-  top: 780px;
+  position: relative;
+  width: 100%;
+  top: 700px;
 }
 
 .Ellipse1 {
