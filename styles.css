@@ -28,38 +28,17 @@ body {
 /* --------------------- Header ----------------------*/
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
   width: 100%;
-  height: 70px;
+  height: 80px;
   display: flex;
   align-items: center;
+  background-color: #1c1c1c;
   justify-content: space-between;
   padding: 0 30px;
   transition: 0.8s;
-}
-
-header.sticky {
-  padding: 0 30px;
-  background-color: transparent;
-}
-
-header.sticky .logo,
-header.sticky ul li a {
-  font-weight: 500;
-  color: #000;
-  z-index: 1;
-}
-
-header.sticky.logo {
-  padding: 0 30px;
-  color: #000;
-  font-weight: 500;
-}
-
-header.sticky .hamburger div {
-  background-color: #000;
 }
 
 header .logo {
@@ -126,7 +105,7 @@ header nav ul li a.active {
     width: 100%;
     left: -100%;
     top: 0;
-    background-color: #ffffff;
+    background-color: #1c1c1c;
     width: 30%;
     height: 100000px;
     padding-left: 30px;
@@ -146,7 +125,7 @@ header nav ul li a.active {
   header nav ul li a {
     margin: 5px 0;
     font-size: 16px;
-    color: #1c1c1c;
+    color: #ffffff;
     font-weight: 400;
   }
 
@@ -170,7 +149,7 @@ header nav ul li a.active {
     width: 100%;
     left: -100%;
     top: 0;
-    background-color: #ffffff;
+    background-color: #1c1c1c;
     width: 220px;
     height: 100000px;
     padding-left: 30px;
@@ -190,7 +169,7 @@ header nav ul li a.active {
   header nav ul li a {
     margin: 5px 0;
     font-size: 18px;
-    color: #1c1c1c;
+    color: #ffffff;
     font-weight: 500;
   }
 
@@ -312,7 +291,7 @@ header nav ul li a.active {
 .CircleDesign1 {
   position: relative;
   width: 100%;
-  top: 700px;
+  top: 720px;
 }
 
 .Ellipse1 {
@@ -869,7 +848,7 @@ header nav ul li a.active {
   margin-inline: auto;
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.4);
   z-index: 1;
@@ -881,16 +860,11 @@ header nav ul li a.active {
   top: 5px;
   left: 5px;
   bottom: 5px;
-  width: 120px;
+  width: 137px;
   background: hsl(24, 74%, 58%);
   border-radius: 6px;
   transition: 0.25s ease-in-out;
   z-index: -1;
-}
-
-.skills-toggle.active::before {
-  left: 128px;
-  width: 154.5px;
 }
 
 .toggle-btn {
@@ -907,7 +881,7 @@ header nav ul li a.active {
   border: none;
   background-color: transparent;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .skills .card-icon {
@@ -1176,7 +1150,7 @@ header nav ul li a.active {
 /* --------------------- Education / Experience Section ----------------------*/
 
 .container {
-  width: 2000px;
+  max-width: 2000px;
   padding-left: 100px;
   padding-bottom: 300px;
 }
@@ -1193,6 +1167,7 @@ main.row {
 
 .col header.title {
   position: relative;
+  background-color: transparent;
 }
 
 .col header.title h2 {
@@ -1455,7 +1430,7 @@ main.row {
 .CircleDesign2 {
   position: absolute;
   width: 100%;
-  top: 3000px;
+  top: 3100px;
 }
 
 .Ellipse1 {
@@ -1650,7 +1625,7 @@ main.row {
     position: absolute;
     overflow: hidden;
     width: 100%;
-    top: 2814px;
+    top: 2900px;
     padding-bottom: 0;
     z-index: 1;
   }
@@ -2107,4 +2082,494 @@ footer {
     font-weight: 400;
     margin: 0px 5px;
   }
+}
+
+/*--------------------------------------------- Page #2 - Personal Projects ---------------------------------------------*/
+
+/* --------------------- Header ----------------------*/
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #1c1c1c;
+  justify-content: space-between;
+  padding: 0 30px;
+  transition: 0.8s;
+}
+
+header .logo {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li a {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0 30px;
+  border: 3px solid transparent;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  border-bottom-color: #ff5f1f;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background: #ffffff;
+}
+
+.background {
+  background-color: #1c1c1c;
+  background-size: cover;
+  height: 950px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 4500px) {
+  .nav_logo {
+    display: none;
+  }
+}
+
+@media (max-width: 1500px) {
+  .hamburger {
+    display: block;
+    z-index: 3;
+  }
+
+  header nav {
+    position: fixed;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background-color: #1c1c1c;
+    width: 30%;
+    height: 100000px;
+    padding-left: 30px;
+    padding-top: 80px;
+    transition: 0.4s;
+    z-index: 3;
+  }
+
+  header #nav_check:checked ~ nav {
+    left: 0;
+  }
+
+  header nav ul {
+    display: block;
+  }
+
+  header nav ul li a {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+
+  .nav_logo {
+    font-size: 25px;
+    position: absolute;
+    margin-top: -65px;
+    display: flex;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 500px) {
+  .hamburger {
+    display: block;
+    z-index: 3;
+  }
+
+  header nav {
+    position: fixed;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background-color: #1c1c1c;
+    width: 220px;
+    height: 100000px;
+    padding-left: 30px;
+    padding-top: 80px;
+    transition: 0.4s;
+    z-index: 3;
+  }
+
+  header #nav_check:checked ~ nav {
+    left: 0;
+  }
+
+  header nav ul {
+    display: block;
+  }
+
+  header nav ul li a {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+
+  .nav_logo {
+    font-size: 30px;
+    position: absolute;
+    margin-top: -60px;
+    display: flex;
+    font-weight: 500;
+  }
+}
+
+.HomepageText {
+  font-family: "MonumentExtended";
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  padding: 60px;
+  z-index: 1;
+}
+
+.HomepageText .Markus {
+  color: transparent;
+  font-size: 120px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 4px #ffffff;
+}
+
+.HomepageText .Gavra {
+  color: transparent;
+  font-size: 120px;
+  text-transform: uppercase;
+  margin-top: -40px;
+  -webkit-text-stroke: 4px #ff5f1f;
+  padding-bottom: 15px;
+}
+
+.HomepageText .SoftwareEngineerWebDesignStudent {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 500;
+  padding-left: 11px;
+}
+
+@media (max-width: 1400px) {
+  .HomepageText {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    padding-left: 2px;
+    z-index: 1;
+  }
+
+  .HomepageText .Markus {
+    font-weight: 400;
+    font-size: 100px;
+    padding-left: 21px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 4px #ffffff;
+  }
+
+  .HomepageText .Gavra {
+    font-weight: 400;
+    font-size: 100px;
+    padding-left: 21px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 4px #ff5f1f;
+  }
+
+  .HomepageText .SoftwareEngineerWebDesignStudent {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    padding-left: 21px;
+  }
+}
+
+@media (max-width: 500px) {
+  .HomepageText {
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    padding-left: 2px;
+    z-index: 1;
+  }
+
+  .HomepageText .Markus {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 50px;
+    padding-left: 21px;
+    text-transform: uppercase;
+    -webkit-text-stroke: #ffffff;
+  }
+
+  .HomepageText .Gavra {
+    color: #ff5f1f;
+    font-weight: 400;
+    font-size: 50px;
+    padding-left: 21px;
+    padding-top: 40px;
+    text-transform: uppercase;
+    -webkit-text-stroke: #ff5f1f;
+  }
+
+  .HomepageText .SoftwareEngineerWebDesignStudent {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    padding-left: 21px;
+    line-height: 30px;
+    padding-top: 0px;
+  }
+}
+
+:root {
+
+  /**
+   * typography
+   */
+
+  --ff-jost: 'Jost', sans-serif;
+
+  --fs-45: 4.5rem;
+  --fs-38: 3.8rem;
+  --fs-32: 3.2rem;
+  --fs-27: 2.7rem;
+  --fs-26: 2.6rem;
+  --fs-22: 2.2rem;
+  --fs-20: 2rem;
+  --fs-18: 1.8rem;
+  --fs-17: 1.7rem;
+  --fs-14: 1.4rem;
+  --fs-12: 1.2rem;
+  
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+
+
+}
+
+a,
+img,
+span,
+label,
+button,
+ion-icon { 
+  display: block; 
+}
+
+
+
+
+address { font-style: normal; }
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--davys-gray);
+  font-size: 1.6rem;
+  line-height: 1.5;
+
+}
+
+.headline-lg { font-size: 4.5rem; }
+
+.headline-md { font-size: var(--fs-38); }
+
+.headline-sm { font-size: var(--fs-32); }
+
+.title-lg { font-size: var(--fs-27); }
+
+.title-md { font-size: var(--fs-26); }
+
+.title-sm { font-size: var(--fs-22); }
+
+.body-lg { font-size: var(--fs-20); }
+
+.body-md { font-size: var(--fs-18); }
+
+.body-sm { font-size: var(--fs-17); }
+
+.label-lg { font-size: var(--fs-14); }
+
+.label-md { font-size: var(--fs-12); }
+
+
+
+
+.container { padding-inline: 16px; }
+
+
+
+.w-100 { width: 100%; }
+
+.section-title {
+  margin-block-end: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-top: 120px;
+  padding-bottom: 50px;
+  -webkit-text-stroke: 3px #1c1c1c;
+  font-size: 70px;
+  color: transparent;
+}
+
+.text-center { text-align: center; }
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 30px; 
+  border: 5px #1C1C1C solid;
+}
+
+.has-bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-holder {
+  aspect-ratio: var(--width) / var(--height);
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+
+
+
+@keyframes loading {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(1turn); }
+}
+
+
+@media (min-width: 992px) {
+  .headline-md { --fs-38: 5rem; }
+
+  .header .btn { 
+    display: block; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+}
+
+
+.portfolio-list,
+.portfolio-card { display: grid; }
+
+.portfolio-list { gap: 50px; }
+
+.portfolio-card { gap: 25px; }
+
+.portfolio-card .card-banner {
+  position: relative;
+  border-radius: 30px; 
+
+  box-shadow: 0 0 0 #1c1c1c;
+  transition: 0.25s ease;
+}
+
+.portfolio-card .card-banner:is(:hover, :focus-within) {
+  box-shadow: 4px 4px 0 #1c1c1c;
+}
+
+.portfolio-card .btn-icon {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  background-color: #FFFFFF;
+  color: #1c1c1c;
+  font-size: 2rem;
+  padding: 8px;
+  border: 2px solid #1c1c1c;
+  opacity: 0;
+  transition: 0.25s ease;
+  will-change: transform;
+}
+
+.portfolio-card .card-banner:is(:hover, :focus-within) .btn-icon {
+  transform: translateX(15px);
+  opacity: 1;
+}
+
+.portfolio-card .chip {
+  background-color: #ff5f1f;
+  max-width: max-content;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 6px 20px;
+  border-radius: 100px;
+  margin-block-end: 18px;
+}
+
+.portfolio-card .card-text { 
+  margin-block: 10px 25px; 
+}
+
+.portfolio-card a {
+  color: #1c1c1c;
+}
+
+.portfolio-card a:hover {
+  color: #ff5f1f;
+  transition: 0.25s ease;
+}
+
+
+@media (min-width: 768px) {
+
+  .portfolio-card {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .portfolio-list > li:nth-child(2n) .card-banner { order: 1; }
+
+  .portfolio-card > * {
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  .portfolio-card .card-text { margin-block-start: 20px; }
+
 }
